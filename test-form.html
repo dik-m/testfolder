@@ -1,0 +1,384 @@
+
+           
+
+<style type="text/css">
+/*-------pricing form start ----*/
+
+.pricing-form-wrap {
+    background: #2A90D9;
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 6% 6%;
+}
+
+.pricing-form-wrap h5 {
+    text-align: center;
+    color: #fafafa;
+    font-size: 32px; font-weight:900;
+}
+
+.pricing-form-wrap h6 {
+    text-align: center; 
+    color: #fafafa;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+label.pricing-form {
+    display: none !important;
+}
+
+
+.pricing-form-wrap input, .pricing-form-wrap textarea, .pricing-form-wrap select {
+    border-radius: 0 !important;
+    height: auto;
+    width: 100%;
+    padding: 12px 10px 12px 25px;
+    margin-bottom: 15px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 37px 0px;
+	 color: rgba(193, 193, 193, 0.8);
+}
+
+.pricing-form-wrap ::placeholder {
+ color: rgba(193, 193, 193, 0.8);
+  opacity: 1; /* Firefox */
+}
+
+.pricing-form-wrap :-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: rgba(193, 193, 193, 0.8);
+}
+
+.pricing-form-wrap ::-ms-input-placeholder { /* Microsoft Edge */
+ color: rgba(193, 193, 193, 0.8);
+}
+
+
+
+
+.pricing-form-wrap .select-brand label {
+    padding: 0px 0px;
+    text-align: left;
+    margin-left: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.pricing-form-wrap span.radio_label {
+    display: inline-block;
+    width: 17%;
+	font-weight: 600;
+}
+
+.pricing-form-wrap span.radio_label input {
+    margin: 0px; width: 28%;
+}
+
+.pricing-form-wrap textarea {
+    height: 110px;
+    margin-top: 40px;
+}
+
+.pricing-form-wrap .form-control:focus {
+    outline: 0;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    border: 0;
+    background: #fff;
+    color: #000 !important;
+}
+
+
+.pricing-form-wrap input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -6px;
+    left: 5px;
+    position: relative;
+    background-color: #000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid white;
+}
+.pricing-form-wrap input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: -6px;
+    left: 6px;
+    position: relative;
+    background-color: #fafafa;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid white;
+}
+
+
+.pricing-form-wrap button#pricingForm {
+    background-color: #FDDD5D;
+    color: #242625;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 9px 100px;
+    margin-bottom: 90px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    border-radius: 5px !important;
+    text-decoration: none !important;
+    max-height: 60px;
+    border: 0;
+    font-weight: bold;
+}
+
+label.pricing-form.bus-type {
+    display: block !important;
+}
+
+select#sel1 option {
+    background: #6a686b !important;
+    color: #fff;
+    padding: 20px !important;
+    font-size: 16px !important;
+    margin: 10px !IMPORTANT;
+    border-radius: 5px !important;
+    line-height: 30px !important;
+}
+
+select#sel1 {
+    appearance: none !important;
+}
+
+.select {
+     cursor: pointer;
+     display: inline-block;
+     position: relative;
+     font-size: 16px;
+     color: #fff;
+     width: 100%;
+     height: 50px;
+	    margin: 15px 0px 0px 0px;
+}
+ select {
+     display: none;
+}
+
+.custom-select {
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: #fff;
+     color: #9E9E9E;
+     padding: 8px 15px;
+     -moz-transition: all 0.2s ease-in;
+     -o-transition: all 0.2s ease-in;
+     -webkit-transition: all 0.2s ease-in;
+     transition: all 0.2s ease-in;
+}
+ .custom-select:after {
+     content: "";
+     width: 0;
+     height: 0;
+     border: 7px solid transparent;
+     border-color:#9E9E9E transparent transparent transparent;
+     position: absolute;
+     top: 20px;
+     right: 10px;
+     transform: rotateZ(0deg);
+     transition: all 0.5s;
+     transform-origin: 50% 25%;
+}
+/*.custom-select:hover {
+     background-color: #b83729;
+}
+*/
+ .custom-select:active, .custom-select.active {
+     background-color: #599ceb;
+     color: #000;
+}
+ /*.custom-select:active:after, .custom-select.active:after {
+     transform: rotateZ(180deg);
+     transition: all 0.5s;
+     transform-origin: 50% 25%;
+}*/
+ .custom-select:focus{
+    outline: 2px;
+}
+ .select-options {
+     max-height: 230px;
+     overflow-y: auto;
+     display: none;
+     position: absolute;
+     top: 100%;
+     right: 0;
+     left: 0;
+     z-index: 999;
+     margin: 0;
+     padding: 1%;
+     list-style: none;
+     background-color: #6a6a6c;
+     border-radius:  5px;
+}
+ .select-options li {
+	 position:relative;
+     color: #ffffff;
+     margin: 0;
+         padding: 6px 36px !important;
+    margin: 5px 5px;
+    /* text-indent: 15px;
+    */
+    /* border-top: 1px solid #AED581;
+    */
+     -moz-transition: all 0.15s ease-in;
+     -o-transition: all 0.15s ease-in;
+     -webkit-transition: all 0.15s ease-in;
+     transition: all 0.15s ease-in;
+     padding-left: 15px;
+}
+ .select-options li:hover {
+     color: #ffffff;
+     background: #599ced;
+	     border-radius: 3px !important;
+}
+
+.select-options li:before {
+    content: "\f00c";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 12px;
+    top: 10px;
+	color:#ffffff;
+	font-family:FontAwesome;
+	font-size: 12px;
+	display:none;
+}
+
+.select-options li:hover:before {display:block}
+
+ .select-options li[rel="hide"] {
+     display: none;
+}
+ ::-webkit-scrollbar {
+     width: 10px;
+     background-color: #F5F5F5;
+}
+ ::-webkit-scrollbar-thumb {
+     background-color:#9E9E9E;
+}
+
+
+
+.hide-select {display:none !important}
+.custom-select{background:none !important;
+background-color:#fff !important;
+font-size: 17px;
+border-radius: 0;
+padding: 11px 26px;
+height: 50px;
+color: rgba(193, 193, 193, 0.8); font-weight:600;} 
+.form-group.slgroup {
+    margin-bottom: -6px;
+}
+
+
+
+/*-------pricing form end ----*/
+
+/*-------Responsive pricing form end ----*/
+
+@media only screen and (max-width:1000px){
+.pricing-form-wrap {width: 100%;margin-left: 0;margin-right: 0;padding: 6% 6%;}		
+}
+
+@media only screen and (max-width:768px){
+.pricing-form-wrap span.radio_label {width: 26%;}	
+}
+
+@media only screen and (max-width:640px){
+.pricing-form-wrap {width: 100%;}
+.pricing-form-wrap h5 {font-size: 28px;}
+.pricing-form-wrap {padding: 6% 4%;}
+}
+
+@media only screen and (max-width:600px){
+.pricing-form-wrap { width: 100%;}
+.pricing-form-wrap input, .pricing-form-wrap textarea, .pricing-form-wrap select{font-size: 16px;}
+.pricing-form-wrap span.radio_label input {width: 47%;}
+.pricing-form-wrap span.radio_label {width: 22%;}
+.pricing-form-wrap input[type='radio']:checked:after{ top: -4px; }
+.pricing-form-wrap input[type='radio']:after { top: -4px; }
+.pricing-form-wrap button#pricingForm{padding: 9px 60px;}
+}
+
+</style>
+
+/*-------Responsive pricing form end ----*/
+
+
+           
+           
+            
+            <div class="pricing-form-wrap">
+              <h5>Are you using any other tool?</h5>
+              <h6>We will import your historic data</h6>
+
+            <form action="#" method="POST">
+             
+                <div class="form-group slgroup">
+                  <label class="pricing-form">Select your current tool</label>
+                  
+                  <select class="form-control  select-css" id="sel1">
+                                <option value="Select your current tool">Select your current tool</option>
+                                <option value="sprinklr">Sprinklr</option>
+                                <option value="brandwatch">Brandwatch</option>
+                                <option value="talkwalker">Talkwalker</option>
+                                <option value="socialstudio">Social Studio</option>
+                                <option value="sproutsocial">Sprout Social</option>
+                                <option value="brand24">Brand24</option>
+                                <option value="hootsuite">Hootsuite</option>
+                                <option value="meltwater">Meltwater</option>
+                                <option value="other">Other</option>
+                              </select>
+                  
+                  
+                </div>
+
+                <div class="form-group">
+                  <label class="pricing-form">Enter your Email Address</label>
+                  <input name="txtpricingFormEmail" type="text" maxlength="100" id="txtpricingFormEmail" placeholder="Enter your Email Address" class="form-control">
+                </div>
+
+                <div class="form-group">
+                <label class="pricing-form">Enter your Contact Number</label>
+                <input name="txtpricingFormMobile" type="text" maxlength="50" id="txtpricingFormMobile" placeholder="Enter your Contact Number" class="form-control">
+                </div>
+
+
+                <div class="form-group select-brand">
+                  <label class="pricing-form bus-type ">Business Type</label>
+                  <span class="radio_label"><input id="rdoBrand" type="radio" name="BrandorAgencyType" value="rdoBrand" checked="checked"><label for="rdoBrand">Brand</label></span>
+                  <span class="radio_label"><input id="rdoAgency" type="radio" name="BrandorAgencyType" value="rdoAgency"><label for="rdoAgency">Agency</label></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="pricing-form">Type your message here</label>
+                    <textarea name="txtareaMsg" id="txtareaMsg" placeholder="Type your message here" class="form-control"rows="8" maxlength="1000"></textarea>
+                </div> 
+
+
+                 <div class="form-group text-center">
+                <button onclick="check(); __doPostBack('btnPricingFormSubmit','')" id="pricingForm" type="button" >Submit</button>
+                </div>
+            
+                </form>
+          </div> 
+        
+        
